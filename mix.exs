@@ -4,6 +4,9 @@ defmodule UsWeather.Mixfile do
   def project do
     [app: :us_weather,
      version: "0.1.0",
+     name: "US Weather",
+     source_url: "https://github.com/imjoehaines/us-weather",
+     escript: escript_config,
      elixir: "~> 1.3",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
@@ -28,5 +31,9 @@ defmodule UsWeather.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [{:httpoison, "~> 0.10.0"}]
+  end
+
+  defp escript_config do
+    [main_module: UsWeather.Cli]
   end
 end

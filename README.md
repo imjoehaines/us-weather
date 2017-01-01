@@ -1,24 +1,16 @@
-# UsWeather
+# US Weather
 
-**TODO: Add description**
+Fetches the weather from the US National Weather Service
 
-## Installation
+The given location should be a 4 digit code from one of the state lists, e.g.
+"PADK" would lookup the weather for Adak Island, Adak Airport
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
+See http://w1.weather.gov/xml/current_obs/seek.php for a list of all locations
 
-  1. Add `us_weather` to your list of dependencies in `mix.exs`:
+usage: us_weather <location>
 
-    ```elixir
-    def deps do
-      [{:us_weather, "~> 0.1.0"}]
-    end
-    ```
+Build with
 
-  2. Ensure `us_weather` is started before your application:
-
-    ```elixir
-    def application do
-      [applications: [:us_weather]]
-    end
-    ```
-
+```bash
+$ mix escript.build
+```
