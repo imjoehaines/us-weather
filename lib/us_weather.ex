@@ -1,0 +1,2 @@
+defmodule UsWeather do
+end
