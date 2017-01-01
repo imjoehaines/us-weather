@@ -7,7 +7,7 @@ The given location should be a 4 digit code from one of the state lists, e.g.
 
 See http://w1.weather.gov/xml/current_obs/seek.php for a list of all locations
 
-usage: us_weather <location>
+usage: us_weather \<location\>
 
 Build with
 
