@@ -1,8 +1,8 @@
 defmodule UsWeather.Cli do
   def main(argv) do
     argv
-     |> parse_args
-     |> process
+    |> parse_args
+    |> process
   end
 
   def parse_args([]), do: :help
