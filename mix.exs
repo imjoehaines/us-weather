@@ -6,7 +6,7 @@ defmodule UsWeather.Mixfile do
      version: "0.1.0",
      name: "US Weather",
      source_url: "https://github.com/imjoehaines/us-weather",
-     escript: escript_config,
+     escript: escript_config(),
      elixir: "~> 1.3",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,

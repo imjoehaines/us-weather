@@ -1,4 +1,19 @@
 defmodule UsWeather.Cli do
+  @doc ~S"""
+  Does a thing.
+
+  ## Examples
+
+      iex> UsWeather.Cli.parse_args []
+      :help
+
+      iex> UsWeather.Cli.parse_args ["PADK"]
+      "PADK"
+
+      iex> UsWeather.Cli.parse_args ["PADK", "-h"]
+      :help
+
+  """
   def main(argv) do
     argv
     |> parse_args
